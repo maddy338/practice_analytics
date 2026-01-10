@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Serenity Hills Resort</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-container header-inner">
+        <a href="index.html" class="site-logo">Serenity Hills</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="room.html" class="nav-link">Rooms</a></li>
+            <li><a href="experience.html" class="nav-link">Experiences</a></li>
+            <li><a href="policies.html" class="nav-link">Policies</a></li>
+            <li><a href="inquiry.html" class="nav-link is-active">Contact</a></li>
+            <li><a href="booking.html" class="nav-link">Book</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="site-container">
+          <h1 class="hero-title">Contact Us</h1>
+          <p class="hero-subtitle">
+            Have a question or special request? We'd love to hear from you.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="site-container">
+          <div class="card-grid">
+            <div class="card">
+              <h2 class="card-title">Send an Inquiry</h2>
+              <form action="#" method="post" class="inquiry-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="first-name" class="form-label">First Name</label>
+                    <input
+                      type="text"
+                      id="first-name"
+                      name="first-name"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name" class="form-label">Last Name</label>
+                    <input
+                      type="text"
+                      id="last-name"
+                      name="last-name"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      class="form-input"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="inquiry-type" class="form-label">Inquiry Type</label>
+                  <select id="inquiry-type" name="inquiry-type" class="form-select">
+                    <option value="">Select an option</option>
+                    <option value="reservation">Reservation Question</option>
+                    <option value="group">Group Booking (10+ rooms)</option>
+                    <option value="wedding">Wedding or Event</option>
+                    <option value="corporate">Corporate Retreat</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-textarea"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary cta-inquiry-send-message">
+                  Send Inquiry
+                </button>
+              </form>
+            </div>
+
+            <div class="card">
+              <h2 class="card-title">Get in Touch</h2>
+              <div class="content-block">
+                <h3>Phone</h3>
+                <p>+1 (828) 555-0192</p>
+                <p class="card-text">Available daily, 8:00 AM - 8:00 PM EST</p>
+              </div>
+
+              <div class="content-block">
+                <h3>Email</h3>
+                <p>reservations@serenityhills.com</p>
+                <p class="card-text">We respond within 24 hours</p>
+              </div>
+
+              <div class="content-block">
+                <h3>Address</h3>
+                <p>Serenity Hills Resort</p>
+                <p>1250 Mountain View Road</p>
+                <p>Asheville, NC 28801</p>
+              </div>
+
+              <div class="content-block">
+                <h3>Ready to Book?</h3>
+                <p class="card-text">
+                  Skip the inquiry and reserve your room directly through our
+                  booking system.
+                </p>
+                <a href="booking.html" class="btn btn-secondary cta-inquiry-book-now">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-container">
+        <div class="footer-grid">
+          <div>
+            <h3 class="footer-title">Serenity Hills Resort</h3>
+            <p class="footer-text">1250 Mountain View Road</p>
+            <p class="footer-text">Asheville, NC 28801</p>
+            <p class="footer-text">+1 (828) 555-0192</p>
+          </div>
+          <div>
+            <h3 class="footer-title">Quick Links</h3>
+            <a href="room.html" class="footer-link">Accommodations</a>
+            <a href="experience.html" class="footer-link">Experiences</a>
+            <a href="policies.html" class="footer-link">Policies & FAQs</a>
+          </div>
+          <div>
+            <h3 class="footer-title">Guest Services</h3>
+            <a href="booking.html" class="footer-link">Make a Reservation</a>
+            <a href="inquiry.html" class="footer-link">Contact Us</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Serenity Hills Resort. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelector(".nav-toggle").addEventListener("click", function () {
+        document.querySelector(".site-nav").classList.toggle("is-open");
+      });
+    </script>
+  </body>
+</html>

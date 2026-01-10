@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Your Stay - Serenity Hills Resort</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-container header-inner">
+        <a href="index.html" class="site-logo">Serenity Hills</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="room.html" class="nav-link">Rooms</a></li>
+            <li><a href="experience.html" class="nav-link">Experiences</a></li>
+            <li><a href="policies.html" class="nav-link">Policies</a></li>
+            <li><a href="inquiry.html" class="nav-link">Contact</a></li>
+            <li><a href="booking.html" class="nav-link is-active">Book</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="site-container">
+          <h1 class="hero-title">Book Your Stay</h1>
+          <p class="hero-subtitle">
+            Select your dates and room to begin your mountain retreat.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="site-container">
+          <div class="card-grid">
+            <div class="card">
+              <h2 class="card-title">Reservation Details</h2>
+              <form action="#" method="post" class="booking-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="checkin" class="form-label">Check-In Date</label>
+                    <input
+                      type="date"
+                      id="checkin"
+                      name="checkin"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="checkout" class="form-label">Check-Out Date</label>
+                    <input
+                      type="date"
+                      id="checkout"
+                      name="checkout"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="adults" class="form-label">Adults</label>
+                    <select id="adults" name="adults" class="form-select" required>
+                      <option value="1">1 Adult</option>
+                      <option value="2" selected>2 Adults</option>
+                      <option value="3">3 Adults</option>
+                      <option value="4">4 Adults</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="children" class="form-label">Children</label>
+                    <select id="children" name="children" class="form-select">
+                      <option value="0" selected>0 Children</option>
+                      <option value="1">1 Child</option>
+                      <option value="2">2 Children</option>
+                      <option value="3">3 Children</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="room-type" class="form-label">Room Type</label>
+                  <select id="room-type" name="room-type" class="form-select" required>
+                    <option value="">Select a room</option>
+                    <option value="mountain-view">
+                      Mountain View Room - From $195/night
+                    </option>
+                    <option value="forest-suite">
+                      Forest Suite - From $325/night
+                    </option>
+                    <option value="summit-cabin">
+                      Summit Cabin - From $495/night
+                    </option>
+                    <option value="treetop-retreat">
+                      Treetop Retreat - From $425/night
+                    </option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="special-requests" class="form-label">Special Requests (Optional)</label>
+                  <textarea
+                    id="special-requests"
+                    name="special-requests"
+                    class="form-textarea"
+                    placeholder="Early check-in, accessibility needs, celebrations, etc."
+                  ></textarea>
+                </div>
+
+                <h3 style="margin-top: var(--spacing-lg); margin-bottom: var(--spacing-md);">
+                  Guest Information
+                </h3>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="guest-first-name" class="form-label">First Name</label>
+                    <input
+                      type="text"
+                      id="guest-first-name"
+                      name="guest-first-name"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="guest-last-name" class="form-label">Last Name</label>
+                    <input
+                      type="text"
+                      id="guest-last-name"
+                      name="guest-last-name"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="guest-email" class="form-label">Email Address</label>
+                    <input
+                      type="email"
+                      id="guest-email"
+                      name="guest-email"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="guest-phone" class="form-label">Phone Number</label>
+                    <input
+                      type="tel"
+                      id="guest-phone"
+                      name="guest-phone"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary cta-booking-complete-reservation">
+                  Complete Reservation
+                </button>
+              </form>
+            </div>
+
+            <div>
+              <div class="card">
+                <h2 class="card-title">Booking Summary</h2>
+                <div class="booking-summary">
+                  <div class="summary-row">
+                    <span>Room</span>
+                    <span>Select a room</span>
+                  </div>
+                  <div class="summary-row">
+                    <span>Check-In</span>
+                    <span>—</span>
+                  </div>
+                  <div class="summary-row">
+                    <span>Check-Out</span>
+                    <span>—</span>
+                  </div>
+                  <div class="summary-row">
+                    <span>Guests</span>
+                    <span>2 Adults</span>
+                  </div>
+                  <div class="summary-row">
+                    <span>Estimated Total</span>
+                    <span>$0.00</span>
+                  </div>
+                </div>
+                <p class="card-text" style="margin-top: var(--spacing-md); font-size: 0.875rem;">
+                  Final pricing will be confirmed after selecting dates and room
+                  type. Taxes and fees not included.
+                </p>
+              </div>
+
+              <div class="card" style="margin-top: var(--spacing-md);">
+                <h3 class="card-title">Need Help?</h3>
+                <p class="card-text">
+                  Our reservations team is available to assist with your
+                  booking.
+                </p>
+                <p style="margin-bottom: var(--spacing-sm);">
+                  <strong>+1 (828) 555-0192</strong>
+                </p>
+                <a href="inquiry.html" class="btn btn-secondary cta-booking-contact-us">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-container">
+        <div class="footer-grid">
+          <div>
+            <h3 class="footer-title">Serenity Hills Resort</h3>
+            <p class="footer-text">1250 Mountain View Road</p>
+            <p class="footer-text">Asheville, NC 28801</p>
+            <p class="footer-text">+1 (828) 555-0192</p>
+          </div>
+          <div>
+            <h3 class="footer-title">Quick Links</h3>
+            <a href="room.html" class="footer-link">Accommodations</a>
+            <a href="experience.html" class="footer-link">Experiences</a>
+            <a href="policies.html" class="footer-link">Policies & FAQs</a>
+          </div>
+          <div>
+            <h3 class="footer-title">Guest Services</h3>
+            <a href="booking.html" class="footer-link">Make a Reservation</a>
+            <a href="inquiry.html" class="footer-link">Contact Us</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Serenity Hills Resort. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelector(".nav-toggle").addEventListener("click", function () {
+        document.querySelector(".site-nav").classList.toggle("is-open");
+      });
+    </script>
+  </body>
+</html>

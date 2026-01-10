@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serenity Hills Resort - Mountain Retreat</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-container header-inner">
+        <a href="index.html" class="site-logo">Serenity Hills</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link is-active">Home</a></li>
+            <li><a href="room.html" class="nav-link">Rooms</a></li>
+            <li><a href="experience.html" class="nav-link">Experiences</a></li>
+            <li><a href="policies.html" class="nav-link">Policies</a></li>
+            <li><a href="inquiry.html" class="nav-link">Contact</a></li>
+            <li><a href="booking.html" class="nav-link">Book</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="site-container">
+          <h1 class="hero-title">Your Mountain Escape Awaits</h1>
+          <p class="hero-subtitle">
+            Nestled in the Blue Ridge Mountains, Serenity Hills Resort offers an
+            authentic retreat experience with modern comforts and breathtaking
+            views.
+          </p>
+          <div class="hero-actions">
+            <a href="booking.html" class="btn btn-primary cta-home-check-availability">Check Availability</a>
+            <a href="room.html" class="btn btn-secondary cta-home-view-rooms">View Our Rooms</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="site-container">
+          <h2 class="section-title">Why Choose Serenity Hills</h2>
+          <div class="card-grid card-grid-3">
+            <div class="card">
+              <h3 class="card-title">Mountain Views</h3>
+              <p class="card-text">
+                Wake up to panoramic views of the Blue Ridge Mountains from
+                every room. Our property sits at 3,200 feet elevation for
+                spectacular sunrises.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="card-title">Farm-to-Table Dining</h3>
+              <p class="card-text">
+                Our on-site restaurant sources ingredients from local farms
+                within 50 miles. Enjoy seasonal menus crafted by our executive
+                chef.
+              </p>
+            </div>
+            <div class="card">
+              <h3 class="card-title">Wellness Retreat</h3>
+              <p class="card-text">
+                Unwind at our full-service spa featuring hot stone massages,
+                yoga classes, and a heated infinity pool overlooking the valley.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="site-container">
+          <h2 class="section-title">Plan Your Stay</h2>
+          <p style="text-align: center; max-width: 600px; margin: 0 auto var(--spacing-lg);">
+            Whether you're planning a romantic getaway, family vacation, or
+            corporate retreat, our team is here to help create your perfect
+            mountain experience.
+          </p>
+          <div class="hero-actions">
+            <a href="inquiry.html" class="btn btn-primary cta-home-send-inquiry">Send an Inquiry</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-container">
+        <div class="footer-grid">
+          <div>
+            <h3 class="footer-title">Serenity Hills Resort</h3>
+            <p class="footer-text">1250 Mountain View Road</p>
+            <p class="footer-text">Asheville, NC 28801</p>
+            <p class="footer-text">+1 (828) 555-0192</p>
+          </div>
+          <div>
+            <h3 class="footer-title">Quick Links</h3>
+            <a href="room.html" class="footer-link">Accommodations</a>
+            <a href="experience.html" class="footer-link">Experiences</a>
+            <a href="policies.html" class="footer-link">Policies & FAQs</a>
+          </div>
+          <div>
+            <h3 class="footer-title">Guest Services</h3>
+            <a href="booking.html" class="footer-link">Make a Reservation</a>
+            <a href="inquiry.html" class="footer-link">Contact Us</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Serenity Hills Resort. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelector(".nav-toggle").addEventListener("click", function () {
+        document.querySelector(".site-nav").classList.toggle("is-open");
+      });
+    </script>
+  </body>
+</html>
